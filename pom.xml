@@ -75,6 +75,10 @@
             <id>oss-release</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </pluginRepository>
+        <pluginRepository>
+            <id>jcenter</id>
+            <url>https://jcenter.bintray.com/</url>
+        </pluginRepository>
     </pluginRepositories>
 
     <build>

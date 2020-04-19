@@ -1,0 +1,16 @@
+!Type:Account
+NFoo Portfolio
+DMy description
+TPort
+B1000.07
+^
+!Type:Invst
+D3/30/14
+NBuy
+YFoo Bar Chemicals
+I10.952
+Q100.0
+T1105.15
+O9.95
+MHello memo
+^

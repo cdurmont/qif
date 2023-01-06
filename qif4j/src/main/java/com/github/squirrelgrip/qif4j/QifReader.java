@@ -51,6 +51,7 @@ public class QifReader extends Reader {
 
 	public QifReader(String filename, String dateFormat) throws FileNotFoundException {
 		this(new File(filename));
+		setDateFormat(dateFormat);
 	}
 
 	public QifReader(String filename) throws FileNotFoundException {
@@ -240,7 +241,7 @@ public class QifReader extends Reader {
 	}
 
 	public void setDateFormat(String dateFormat) {
-		formatter = DateTimeFormatter.ofPattern(DEFAULT_DATE_FORMAT);
+		formatter = DateTimeFormatter.ofPattern(dateFormat);
 	}
 
 	private void setPrice(QifInvestment investment, String priceString) {

@@ -221,7 +221,7 @@ public class QifReader extends Reader {
 		if (loadStatus == LoadStatus.NOT_STARTED) {
 			try {
 				String line = this.reader.readLine();
-				if (line.startsWith("!Type:")) {
+				if (line.toLowerCase().startsWith("!type:")) {
 					this.qifType = QifType.valueOf(line.substring(6).toUpperCase());
 				} else {
 					throw new QifReaderException("File Format is not a QIF format");
